@@ -43,8 +43,9 @@ main .buttons button {
   align-items: center;
   flex-direction: column;
   border-radius: 2.4rem;
+  margin: 0 auto;
   padding: 2.4rem;
-  width: 90vw;
+  width: 34rem;
   margin-top: 1.6rem;
   font-size: 1.6rem;
   color: #0A3871;
@@ -53,6 +54,13 @@ main .buttons button {
 main .buttons button:nth-child(1) {
   background: #0A3871;
   color: #FFFFFF;
+  border: none;
+}
+
+main .buttons button:nth-child(2) {
+  background: #F3F5FC;
+  color: #0A3871;
+  border: 1px solid #0A3871;
 }
 
 .answer {
@@ -72,7 +80,11 @@ main .buttons button:nth-child(1) {
   margin-top: 2rem;
 }
 
-@media(min-width: 768px) {
+.hide {
+  display: none;
+}
+
+@media(min-width: 600px) {
   main .text-area input {
     height: 50rem;
   }
@@ -81,5 +93,37 @@ main .buttons button:nth-child(1) {
   main .buttons {
     display: flex;
     gap: 2.4rem;
+  }
+}
+
+@media(min-width:1400px) {
+
+  header img,
+  main .text-area input,
+  main .alert {
+    margin: 4rem;
+  }
+
+  main .buttons {
+    width: 60rem;
+    margin: 0 auto;
+  }
+
+  main .buttons button:nth-child(2) {
+    background: #D8DFE8;
+  }
+
+  main .answer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 90vh;
+    width: 40rem;
+  }
+
+  main .answer img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
   }
 }
