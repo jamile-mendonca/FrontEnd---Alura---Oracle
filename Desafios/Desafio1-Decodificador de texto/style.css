@@ -1,129 +1,94 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  font-size: 62.5%;
-}
-
-body {
-  background: #F3F5FC;
+  background: #E5E5E5;
   font-family: 'Inter', sans-serif;
-  margin: auto 1.6rem;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
 }
 
-header img {
-  margin: 2.4rem 0 4rem;
+.logoAlura {
+  margin-left: 10px;
+  padding-top: 10px;
+  width: 2%;
 }
 
-main .text-area input {
-  border: none;
-  height: 20rem;
-  color: #0A3871;
-  font-size: 3.2rem;
-  background: #F3F5FC;
-}
-
-main .alert {
+main {
   display: flex;
-  flex-direction: row;
-  margin-top: 2rem;
+  margin-bottom: 50px;
+  margin-left: 80px;
 }
 
-main .alert p {
-  padding: 0 0.8rem;
-  text-align: center;
-  font-size: 1.2rem;
-}
-
-main .buttons button {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 2.4rem;
-  margin: 0 auto;
-  padding: 2.4rem;
-  width: 34rem;
-  margin-top: 1.6rem;
-  font-size: 1.6rem;
-  color: #0A3871;
-}
-
-main .buttons button:nth-child(1) {
-  background: #0A3871;
-  color: #FFFFFF;
+.text-area {
   border: none;
+  color: #0A3871;
+  margin-top: 90px;
+  text-transform: lowercase;
 }
 
-main .buttons button:nth-child(2) {
-  background: #F3F5FC;
+::placeholder {
   color: #0A3871;
+}
+
+.text-area:focus {
+  outline: none;
+}
+
+.mensagem {
+  background: white;
+  background-image: url(./assets/img-answer.png);
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 24px;
+  color: #0A3871;
+  margin-left: 98px;
+  margin-top: 20px;
+  padding-left: 20px;
+  position: fixed;
+}
+
+.mensagem:focus {
+  outline: none;
+}
+
+.botoes {
+  display: flex;
+  margin-top: 18px;
+}
+
+.btn-desencriptar {
+  background: #d8dfe8;
   border: 1px solid #0A3871;
+  border-radius: 24px;
+  color: #0A3871;
+  cursor: pointer;
+  height: 67px;
+  margin-left: 30px;
+  width: 328px;
 }
 
-.answer {
-  background: #FFFFFF;
-  border-radius: 3rem;
-  margin: 6rem 2.4rem 4rem;
-  padding: 3.2rem;
-  text-align: center;
+.btn-encriptar {
+  background: #0A3871;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  color: white;
+  cursor: pointer;
+  height: 67px;
+  width: 328px;
 }
 
-.answer h1 {
-  font-size: 2.4rem;
+.btn-copiar {
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  color: #0A3871;
+  cursor: pointer;
+  height: 67px;
+  margin-left: 108px;
+  margin-top: 402px;
+  position: absolute;
+  width: 336px;
 }
 
-.answer p {
-  font-size: 1.6rem;
-  margin-top: 2rem;
-}
-
-.hide {
-  display: none;
-}
-
-@media(min-width: 600px) {
-  main .text-area input {
-    height: 50rem;
-  }
-
-
-  main .buttons {
-    display: flex;
-    gap: 2.4rem;
-  }
-}
-
-@media(min-width:1400px) {
-
-  header img,
-  main .text-area input,
-  main .alert {
-    margin: 4rem;
-  }
-
-  main .buttons {
-    width: 60rem;
-    margin: 0 auto;
-  }
-
-  main .buttons button:nth-child(2) {
-    background: #D8DFE8;
-  }
-
-  main .answer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 90vh;
-    width: 40rem;
-  }
-
-  main .answer img {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5rem;
-  }
+.informacao {
+  color: #495057;
+  font-size: 18px;
 }
